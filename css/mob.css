@@ -138,6 +138,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 45px;
   }
   .team {
     padding-top: 96px;
@@ -145,9 +146,32 @@
   }
   .team-member {
     margin-right: 0;
+    margin-bottom: 72px;
   }
 
-  .team {
-    padding-left: 30;
+  .team-card {
+    padding: 32px 8px;
+  }
+  .team-desc {
+    margin-bottom: 8px;
+  }
+
+  /* CUSTOMERS */
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 0;
+    row-gap: 72px;
+  }
+  .customers-link {
+    width: 190px;
+    height: 88px;
   }
 }
