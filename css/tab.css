@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200) {
   .container {
     width: 768px;
   }
@@ -7,5 +7,10 @@
   .solutions-title {
     font-size: 56px;
     margin-bottom: 40px;
+  }
+
+  .mobile-menu,
+  .burger-btn {
+    display: none;
   }
 }

@@ -418,10 +418,6 @@ a {
   font-size: 16px;
 }
 
-.media-footer {
-  margin-left: 120px;
-}
-
 .footer-media {
   margin-top: 16px;
   display: flex;
@@ -448,9 +444,7 @@ a {
 }
 
 /* SUBSCRIBE SECTION */
-.subscribe-wrap {
-  margin-left: 80px;
-}
+
 .subscribe-title {
   color: var(--body-background);
   font-weight: 500;

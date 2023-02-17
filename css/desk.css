@@ -14,4 +14,16 @@
   .team-members .team-member:not(:last-child) {
     margin-right: 24px;
   }
+
+  .media-footer {
+    margin-left: 120px;
+  }
+  .subscribe-wrap {
+    margin-left: 80px;
+  }
+
+  .mobile-menu,
+  .burger-btn {
+    display: none;
+  }
 }
