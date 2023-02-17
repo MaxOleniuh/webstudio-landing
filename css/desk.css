@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  /* SOLUTIONS STYLES */
+  .solutions-title {
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+  .features-list .features-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}

@@ -1,0 +1,85 @@
+/* index.html STYLES START*/
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+    /* removes white block for mobile version */
+  }
+  .container {
+    width: 428px;
+  }
+  /* HEADER */
+
+  .nav-list,
+  .auth {
+    display: none;
+  }
+  .main-nav {
+    padding: 0;
+  }
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.2;
+  }
+  .burger-item {
+  }
+  /* SOLUTIONS STYLES */
+  .solutions {
+    margin: 0 auto;
+    background-color: var(--dark-theme);
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    /* BACKGROUND */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob/mob-hero.jpg);
+    background-size: 100%;
+  }
+  .solutions-title {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.07;
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-item {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-icon {
+    display: none;
+  }
+  .aim {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .aim-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .aim-desc {
+    font-weight: 500;
+    width: 396px;
+  }
+}

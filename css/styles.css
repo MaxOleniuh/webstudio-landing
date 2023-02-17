@@ -78,7 +78,7 @@ ul {
 }
 /* container  */
 .container {
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
@@ -221,10 +221,6 @@ a {
 
 .features-list {
   display: flex;
-}
-
-.features-list .features-item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .features-item {
