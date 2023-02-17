@@ -11,4 +11,7 @@
   .features-list .features-item:not(:last-child) {
     margin-right: 24px;
   }
+  .team-members .team-member:not(:last-child) {
+    margin-right: 24px;
+  }
 }

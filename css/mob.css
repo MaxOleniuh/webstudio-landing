@@ -1,6 +1,28 @@
 /* index.html STYLES START*/
 
 @media screen and (max-width: 480px) {
+  :root {
+    --brand-color: #4d5ae5;
+    --pressed-state: #404bbf;
+    --dark-theme: #2e2f42;
+    --success-theme: #31d0aa;
+    --main-text-color: #434455;
+    --suble-text: #8e8f99;
+    --accent: #e7e9fc;
+    --light-background: #f4f4fd;
+    --modal-overlay: #2e2f42;
+    --hero-background: #2e2f42;
+    --cornflower: #e7e9fc;
+    --body-background: white;
+    --main-font: "Roboto";
+    --customers-icon: #8e8f99;
+    --footer-icon: rgba(255, 255, 255, 0.1);
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --modal-background: #2e2f4240;
+    --modal-color: #fcfcfc;
+  }
+
   html,
   body {
     overflow-x: hidden;
@@ -23,8 +45,27 @@
     padding-bottom: 24px;
     line-height: 1.2;
   }
-  .burger-item {
+  .burger-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 22px;
   }
+  .burger-icon {
+    stroke: var(--dark-theme);
+    transition: stroke, var(--transition-timing-function),
+      var(--transition-duration);
+  }
+
+  .burger-btn:is(:hover, :focus) {
+    stroke: var(--accent);
+  }
+
+  /* BURGER */
+
   /* SOLUTIONS STYLES */
   .solutions {
     margin: 0 auto;
@@ -51,10 +92,13 @@
     line-height: 1.07;
   }
 
+  /* FEATURES */
+
   .features-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
   .features-item {
     margin-right: 0;
@@ -70,7 +114,6 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
-
   .aim-title {
     font-weight: 700;
     font-size: 36px;
@@ -81,5 +124,30 @@
   .aim-desc {
     font-weight: 500;
     width: 396px;
+    margin-bottom: 72px;
+  }
+  .aim-desc:last-child {
+    margin-bottom: 0;
+  }
+  .activities {
+    display: none;
+  }
+
+  /* TEAM */
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+  .team-member {
+    margin-right: 0;
+  }
+
+  .team {
+    padding-left: 30;
   }
 }

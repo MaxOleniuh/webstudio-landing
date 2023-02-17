@@ -282,9 +282,7 @@ a {
   color: var(--dark-theme);
   text-align: center;
 }
-.team-members .team-member:not(:last-child) {
-  margin-right: 24px;
-}
+
 .team-card {
   padding-top: 32px;
   padding-bottom: 32px;
