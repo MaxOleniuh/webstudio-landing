@@ -314,11 +314,13 @@
     line-height: 1.11;
     color: #4d5ae5;
   }
-  .mobile-menu-social-list {
+  .mob-icons {
+    margin-top: 48px;
     display: flex;
     gap: 56px;
   }
-  .mobile-menu-social-link {
+  .modal-icon-mob {
+    fill: var(--body-background);
     background-color: #4d5ae5;
     display: flex;
     justify-content: center;
