@@ -1,8 +1,32 @@
-@media screen and (min-width: 768px) and (max-width: 1200) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .container {
     width: 768px;
   }
+  /* HEADER */
 
+  .auth-link {
+    font-size: 12px;
+    padding: 0;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .nav-list {
+    margin-left: 123px;
+    margin-right: 118px;
+  }
+  .auth {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-address {
+    display: flex;
+  }
+  .auth-item:last-child {
+    margin-left: 0;
+  }
   /* SOLUTIONS STYLES */
   .solutions-title {
     font-size: 56px;
@@ -12,5 +36,170 @@
   .mobile-menu,
   .burger-btn {
     display: none;
+  }
+  .main-nav {
+    padding: 0;
+    display: flex;
+  }
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.2;
+    /* BURGER */
+  }
+  /* SOLUTIONS STYLES */
+  .solutions {
+    padding-top: 112px;
+    padding-bottom: 108px;
+    /* BACKGROUND */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tab/tab-hero.jpg);
+    background-size: 100%;
+  }
+  .solutions-title {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.07;
+  }
+
+  /* FEATURES */
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .features-item {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-icon {
+    display: none;
+  }
+  .aim {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .aim-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .aim-desc {
+    font-weight: 500;
+    width: 396px;
+    margin-bottom: 72px;
+  }
+  .aim-desc:last-child {
+    margin-bottom: 0;
+  }
+  .activities {
+    display: none;
+  }
+
+  /* TEAM */
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 45px;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+  .team-member {
+    margin-right: 0;
+    margin-bottom: 72px;
+  }
+
+  .team-card {
+    padding: 32px 8px;
+  }
+  .team-desc {
+    margin-bottom: 8px;
+  }
+
+  /* CUSTOMERS */
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 0;
+    row-gap: 72px;
+  }
+  .customers-link {
+    width: 190px;
+    height: 88px;
+  }
+  /* FOOTER */
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  .footer-logo {
+    margin-bottom: 16px;
+  }
+  .media-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  .subscribe-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-input {
+    width: 398px;
+    margin: 0 auto;
+  }
+  .subscribe-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    width: 165px;
+  }
+  .send-icon {
+    margin-left: 16px;
   }
 }
