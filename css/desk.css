@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
+    width: 1158px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -8,6 +8,7 @@
   /* HEADER */
   header {
     max-width: 100%;
+    padding: 24px 24px 28px;
   }
   /* SOLUTIONS STYLES */
 
