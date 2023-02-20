@@ -320,9 +320,7 @@
   .auth {
     display: none;
   }
-  .mobile-menu {
-    display: none;
-  }
+
   .main-nav {
     display: flex;
     justify-content: space-between;
@@ -512,5 +510,108 @@
   }
   .send-icon {
     margin-left: 16px;
+  }
+
+  /* MOBILE MENU */
+  .mobile-menu-open {
+    border: none;
+    background-color: var(--body-background);
+  }
+  .mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    z-index: 1000;
+    background-color: var(--body-background);
+    box-shadow: 0 0 0 100vmax rgb(red, green, blue);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity, var(--transition-timing-function),
+      var(--transition-duration);
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .close-btn {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    transition: background-color, var(--transition-timing-function),
+      var(--transition-duration);
+  }
+  .close-btn:is(:hover, :after) {
+    background-color: var(--pressed-state);
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+
+    color: var(--primary-color);
+    transition: color var(--transition-duration-and-fun);
+  }
+  .menu-link:is(:hover, :focus) {
+    color: var(--pressed-state);
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+  .contacts-link {
+    color: var(--pressed-state);
+  }
+  .contacts-link {
+    color: var(--hero-background);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .contacts-link:is(:hover, :focus) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--brand-color);
+  }
+  .mob-icons {
+    margin-top: 48px;
+    display: flex;
+    gap: 56px;
+  }
+  .icon-mob {
+    fill: var(--body-background);
+    background-color: var(--brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }

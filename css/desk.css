@@ -5,6 +5,10 @@
     padding-right: 16px;
   }
 
+  /* HEADER */
+  header {
+    max-width: 100%;
+  }
   /* SOLUTIONS STYLES */
 
   .solutions-title {
