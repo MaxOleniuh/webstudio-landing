@@ -1,5 +1,5 @@
 /* index.html STYLES START*/
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 481px) {
   .container {
     width: 100%;
     padding-left: 16px;
@@ -60,7 +60,7 @@
     background-size: cover;
   }
   .solutions-title {
-    max-width: 320px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -107,8 +107,10 @@
   /* TEAM */
   .team-members {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
   }
   .team {
     padding-top: 96px;
@@ -284,7 +286,7 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  .contacts-link:is(:hover, :focus) {
+  .phone {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -307,7 +309,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 100%;
     padding-left: 16px;
@@ -316,7 +318,6 @@
     margin-left: auto;
   }
   /* HEADER */
-  .nav-list,
   .auth {
     display: none;
   }
@@ -368,7 +369,6 @@
     background-size: cover;
   }
   .solutions-title {
-    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -381,7 +381,6 @@
 
   .features-list {
     display: flex;
-    flex-direction: column;
     gap: 72px;
   }
 
@@ -393,7 +392,6 @@
     padding-bottom: 96px;
   }
   .aim-title {
-    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -415,7 +413,6 @@
   /* TEAM */
   .team-members {
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
   }
   .team {
@@ -423,14 +420,8 @@
     padding-bottom: 128px;
   }
   .team-member {
-    margin-right: 0;
     margin-bottom: 72px;
     width: 264px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .team-member:last-child {
-    margin-bottom: 0;
   }
 
   .team-card {
@@ -593,7 +584,7 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  .contacts-link:is(:hover, :focus) {
+  .phone {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;

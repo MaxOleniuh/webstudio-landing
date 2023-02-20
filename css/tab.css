@@ -1,11 +1,16 @@
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 767px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 767px) and (max-width: 1199px) {
   .container {
     width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
   /* HEADER */
-
+  header {
+  }
   .auth-link {
     font-size: 12px;
     padding: 0;
@@ -33,7 +38,6 @@
     margin-bottom: 40px;
   }
 
-  .nav-list,
   .burger-btn {
     display: none;
   }
@@ -271,7 +275,7 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  .contacts-link:is(:hover, :focus) {
+  .phone {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
