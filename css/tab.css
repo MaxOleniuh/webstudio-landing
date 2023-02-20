@@ -2,7 +2,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
   }
   /* HEADER */
 
@@ -48,6 +48,8 @@
   }
   /* SOLUTIONS STYLES */
   .solutions {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 112px;
     padding-bottom: 108px;
     /* BACKGROUND */

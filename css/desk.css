@@ -1,9 +1,12 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   /* SOLUTIONS STYLES */
+
   .solutions-title {
     font-size: 56px;
     margin-bottom: 40px;
@@ -25,5 +28,8 @@
   .mobile-menu,
   .burger-btn {
     display: none;
+  }
+  .features-item {
+    width: 264px;
   }
 }

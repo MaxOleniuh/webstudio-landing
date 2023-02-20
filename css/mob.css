@@ -1,8 +1,11 @@
 /* index.html STYLES START*/
-
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
-    width: 428px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
   /* HEADER */
   .nav-list,
@@ -11,7 +14,6 @@
   }
 
   .main-nav {
-    padding: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -42,6 +44,7 @@
 
   /* SOLUTIONS STYLES */
   .solutions {
+    width: 100%;
     margin: 0 auto;
     background-color: var(--dark-theme);
     text-align: center;
@@ -54,7 +57,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/mob/mob-hero.jpg);
-    background-size: 100%;
+    background-size: cover;
   }
   .solutions-title {
     max-width: 320px;
@@ -71,16 +74,9 @@
   .features-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0;
+    gap: 72px;
   }
-  .features-item {
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
   .features-icon {
     display: none;
   }
@@ -89,6 +85,7 @@
     padding-bottom: 96px;
   }
   .aim-title {
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -97,7 +94,7 @@
 
   .aim-desc {
     font-weight: 500;
-    width: 396px;
+    width: 100%;
     margin-bottom: 72px;
   }
   .aim-desc:last-child {
@@ -112,7 +109,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0 45px;
   }
   .team {
     padding-top: 96px;
@@ -121,6 +117,12 @@
   .team-member {
     margin-right: 0;
     margin-bottom: 72px;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-member:last-child {
+    margin-bottom: 0;
   }
 
   .team-card {
@@ -144,9 +146,12 @@
     margin: 0;
     row-gap: 72px;
   }
+
+  .customers-item {
+    width: calc((100% - 16px) / 2);
+  }
   .customers-link {
-    width: 190px;
-    height: 88px;
+    width: 100%;
   }
   /* FOOTER */
   .footer {
@@ -186,7 +191,6 @@
     align-items: center;
   }
   .subscribe-input {
-    width: 398px;
     margin: 0 auto;
   }
   .subscribe-btn {
@@ -209,7 +213,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
     top: 0;
     left: 0;
@@ -231,6 +235,7 @@
     pointer-events: auto;
   }
   .close-btn {
+    background-color: var(--accent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +247,8 @@
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    transition: background-color var(--transition-duration-and-fun);
+    transition: background-color, var(--transition-timing-function),
+      var(--transition-duration);
   }
   .close-btn:is(:hover, :after) {
     background-color: var(--pressed-state);
