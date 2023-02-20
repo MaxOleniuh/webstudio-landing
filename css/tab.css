@@ -39,9 +39,7 @@
   .burger-btn {
     display: none;
   }
-  .main-nav {
-    padding: 0;
-  }
+
   .logo {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -97,6 +95,7 @@
   }
   .aim-desc {
     font-weight: 500;
+    font-size: 16px;
   }
 
   .activities {
