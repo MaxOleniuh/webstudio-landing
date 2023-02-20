@@ -2,15 +2,13 @@
   screen and (min-resolution: 192dpi) and (min-width: 767px) and (max-width: 1199px),
   screen and (min-resolution: 2dppx) and (min-width: 767px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
   }
   /* HEADER */
-  header {
-  }
   .auth-link {
     font-size: 12px;
     padding: 0;
