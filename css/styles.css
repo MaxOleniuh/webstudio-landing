@@ -612,11 +612,7 @@ a {
   border: 1px solid var(--cornflower);
   border-top: none;
 }
-.overlay-link {
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  transition-property: box-shadow;
-}
+
 .overlay-wrap {
   position: relative;
   overflow: hidden;

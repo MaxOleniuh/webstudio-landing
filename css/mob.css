@@ -252,7 +252,7 @@
     transition: background-color, var(--transition-timing-function),
       var(--transition-duration);
   }
-  .close-btn:is(:hover, :after) {
+  .close-btn:is(:hover, :after, :focus) {
     background-color: var(--pressed-state);
   }
   .menu-list {
@@ -310,8 +310,7 @@
   }
 
   .modal {
-    width: 392px;
-    height: 586px;
+    width: 100%;
   }
 }
 
