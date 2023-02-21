@@ -311,6 +311,7 @@
 
   .modal {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -507,7 +508,10 @@
   .send-icon {
     margin-left: 16px;
   }
-
+  .modal {
+    width: 408px;
+    height: 586px;
+  }
   /* MOBILE MENU */
   .mobile-menu-open {
     border: none;
