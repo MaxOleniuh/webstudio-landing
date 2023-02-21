@@ -580,11 +580,15 @@ a {
 .project-card {
   background: var(--body-background);
   margin-bottom: 48px;
+}
+
+.overlay-link {
+  display: block;
   transition: box-shadow, var(--transition-timing-function),
     var(--transition-duration);
 }
 
-.project-card:is(:hover, :focus, ) {
+.overlay-link:is(:hover, :focus, ) {
   box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
     0px 2px 1px rgb(46 47 66 / 8%);
 }
