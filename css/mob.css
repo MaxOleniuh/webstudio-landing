@@ -381,6 +381,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.07;
+    max-width: 100%;
   }
 
   /* FEATURES */
@@ -389,6 +390,24 @@
     display: flex;
     gap: 72px;
   }
+
+   .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aim-title {
+    text-align: center;
+  }
+  .aim-desc {
+    text-align: center;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 17px;
+  }
+}
 
   .features-icon {
     display: none;
@@ -613,5 +632,20 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+}
+
+/* PORTFOLIO MEDIA STYLES */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .filter-list {
+    display: flex;
+    align-items: center;
+  }
+  .filter-item > .btn {
+    padding: 0px;
+  }
+
+  .filter-list .filter-item:not(:first-child) {
+    margin: 3px;
   }
 }

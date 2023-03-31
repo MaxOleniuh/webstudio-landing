@@ -7,6 +7,7 @@
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
+    outline: 3px solid tomato;
   }
   /* HEADER */
   .auth-link {
@@ -36,6 +37,7 @@
     margin-bottom: 40px;
   }
 
+  .mobile-menu,
   .burger-btn {
     display: none;
   }
@@ -66,7 +68,7 @@
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 40px;
-    width: 496px;
+    width: 100%;
   }
 
   /* FEATURES */
@@ -297,5 +299,22 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+}
+@media screen and (min-width: 479px) and (max-width: 556px) {
+  .nav-list {
+    gap: 20px;
+  }
+  .filter-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter-item > .btn {
+    padding: 8px 12px;
+  }
+
+  .filter-list .filter-item:not(:first-child) {
+    margin: 10px;
   }
 }
