@@ -1,6 +1,4 @@
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px) and (max-width: 1199px),
-  screen and (min-resolution: 192dpi) and (min-width: 767px) and (max-width: 1199px),
-  screen and (min-resolution: 2dppx) and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 676px) {
   .container {
     width: 100%;
     padding-left: 16px;
@@ -26,7 +24,7 @@
     flex-direction: column;
   }
   .main-address {
-    display: flex;
+    display: none;
   }
   .auth-item:last-child {
     margin-left: 0;
