@@ -595,6 +595,7 @@ a {
 
 .project-card:nth-child(n + 7) {
   background: var(--body-background);
+  margin-top: 20px;
   margin-bottom: 0;
 }
 .project-card-title {

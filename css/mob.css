@@ -1,7 +1,7 @@
 /* index.html STYLES START*/
 @media screen and (min-width: 320px) and (max-width: 481px) {
   .container {
-    width: 320px;
+    width: 300px;
     padding-left: 16px;
     padding-right: 16px;
     margin-right: auto;
@@ -143,7 +143,7 @@
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
     justify-content: center;
     margin: 0;
     row-gap: 72px;
@@ -185,7 +185,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
   }
   .form-subscribe {
     display: flex;
@@ -236,6 +235,7 @@
     visibility: visible;
     pointer-events: auto;
   }
+
   .close-btn {
     background-color: var(--accent);
     display: flex;
@@ -286,12 +286,7 @@
     font-size: 20px;
     line-height: 1.2;
   }
-  .phone {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.11;
-    color: var(--brand-color);
-  }
+
   .mob-icons {
     width: 100%;
     margin-top: 48px;
@@ -472,14 +467,6 @@
   padding-bottom: 96px;
   text-align: center;
 }
-.customers-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin: 0;
-  row-gap: 72px;
-}
 
 .customers-item {
   width: calc((100% - 16px) / 2);
@@ -517,7 +504,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15px;
 }
 .form-subscribe {
   display: flex;
@@ -622,12 +608,10 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.phone {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.11;
-  color: var(--brand-color);
+.contacts-link:hover {
+  color: var(--pressed-state);
 }
+
 .mob-icons {
   margin-top: 48px;
   display: flex;
@@ -643,13 +627,20 @@
   height: 40px;
   border-radius: 50%;
 }
-
+.icon-mob:hover {
+  fill: var(--body-background);
+  background-color: var(--success-theme);
+}
 /* PORTFOLIO MEDIA STYLES */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .filter-list {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-auto-flow: column dense;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(2, 100px) repeat(1, 100px);
   }
+
   .filter-item > .btn {
     padding: 0px;
   }

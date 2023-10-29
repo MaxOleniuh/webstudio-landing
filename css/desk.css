@@ -16,21 +16,24 @@
     font-size: 56px;
     margin-bottom: 40px;
   }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
   .features-list .features-item:not(:last-child) {
     margin-right: 24px;
   }
   .team-members .team-member:not(:last-child) {
     margin-right: 24px;
   }
+  .team-members {
+    column-gap: 0;
+  }
   .aim-desc {
     font-size: 16px;
     font-weight: 400;
-  }
-  .media-footer {
-    margin-left: 120px;
-  }
-  .subscribe-wrap {
-    margin-left: 80px;
   }
 
   .mobile-menu,
@@ -40,8 +43,8 @@
   .features-item {
     width: 264px;
   }
-
   .footer-container {
-    align-items: baseline;
+    display: flex;
+    justify-content: center;
   }
 }
